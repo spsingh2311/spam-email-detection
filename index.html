@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Email Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>📧 Spam Email Detection</h2>
+        <button onclick="toggleMode()">🌙 Toggle Mode</button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <textarea 
+            id="emailText" 
+            placeholder="Paste your email content here..."
+        ></textarea>
+
+        <button onclick="checkSpam()">Analyze Email</button>
+
+        <!-- Result Section -->
+        <div class="result-box">
+            <h3 id="result"></h3>
+            <p id="percentage"></p>
+        </div>
+
+        <!-- History Section -->
+        <div class="history">
+            <h3>📜 History</h3>
+            <ul id="historyList"></ul>
+        </div>
+
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+
+</body>
+</html>
